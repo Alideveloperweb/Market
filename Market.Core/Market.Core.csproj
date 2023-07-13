@@ -10,9 +10,12 @@
     <Folder Include="ExtentionMethod\" />
     <Folder Include="Interface\" />
     <Folder Include="Viewmodel\" />
-    <Folder Include="Service\" />
     <Folder Include="Sender\" />
     <Folder Include="Security\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Market.DataLayer\Market.DataLayer.csproj" />
   </ItemGroup>
 
 </Project>

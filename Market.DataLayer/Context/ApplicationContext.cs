@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Market.DataLayer.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,5 +16,7 @@ namespace Market.DataLayer.Context
 
         }
         #endregion
+
+        public DbSet<MainSlader> MainSladers { get; set; }
     }
 }

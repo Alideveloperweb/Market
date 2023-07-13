@@ -1,3 +1,5 @@
+using Market.Core.Interface;
+using Market.Core.Service;
 using Market.DataLayer.Context;
 using Microsoft.EntityFrameworkCore;
 using System.Configuration;
@@ -12,6 +14,11 @@ builder.Services.AddDbContext<ApplicationContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+#endregion
+
+#region IoC
+builder.Services.AddTransient<ISliderService, SliderService>();
+
 #endregion
 
 var app = builder.Build();
