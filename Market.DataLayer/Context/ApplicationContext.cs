@@ -12,9 +12,7 @@ namespace Market.DataLayer.Context
     {
         #region Constractor
         public ApplicationContext(DbContextOptions<ApplicationContext>options):base(options)
-        {
-
-        }
+        { }
         #endregion
 
         public DbSet<MainSlader> MainSladers { get; set; }
